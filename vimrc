@@ -21,8 +21,9 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'blueyed/vim-diminactive'
 Plugin 'zeis/vim-kolor'
 Plugin 'Raimondi/delimitMate'
-
-
+Plugin 'easymotion/vim-easymotion'
+Plugin 'haya14busa/incsearch-easymotion.vim'
+Plugin 'haya14busa/incsearch.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -30,10 +31,11 @@ syntax on
 set autoindent
 set nu "rnu
 
+colorscheme gruvbox
 "colorscheme jellybeans
-colorscheme kolor
+"colorscheme kolor
 
-"set bg=dark
+set bg=dark
 
 set backspace=indent,eol,start
 set t_Co=256
@@ -61,3 +63,7 @@ syntax enable
 filetype indent on
 highlight Comment term=bold cterm=bold ctermfg=4
 let delimitMate_expand_cr=1
+set hlsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
