@@ -2,8 +2,12 @@
 
 2. git clone https://github.com/karericegood/vimrc.git
 
-3. mv vimrc 
+3. cd vimrc 
 
 4. mv vimrc ~/.vimrc
 
-5. Enjoy!
+5. enter a new vi file and..
+
+   :PluninInstall
+
+6. Enjoy!
